@@ -1,7 +1,10 @@
 {
   "name": "portifolio",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "popper.js": "^1.16.1"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:Allysonfreitas210695/portifolioRuby.git",
