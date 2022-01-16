@@ -12,7 +12,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 
-Rails.application.config.assets.precompile += %w( welcome.css welcome.js users.css users.js)
+Rails.application.config.assets.precompile += %w( welcome.css welcome.js users.css users.js session.css session.js)
 
 
 Rails.application.config.assets.precompile += %w( bootstrap.min.css sticky-footer-navbar.css)

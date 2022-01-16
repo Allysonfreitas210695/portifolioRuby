@@ -1,6 +1,6 @@
-<div class="container my-2 px-4 py-2">
-    <header class="d-flex justify-content-center py-3">
-     <h2> Cadastrando Um novo Usuário </h2>
+<div class="container my-1 px-3">
+    <header class="d-flex justify-content-center py-2">
+        <h2> Cadastrando Um novo Usuário </h2>
     </header>
 
     <%= form_with(model: @user, local: true) do |form| %>
@@ -36,6 +36,6 @@
         <%= form.text_field :password_confirmation, class:"form-control", for:"exampleFormControlInput1", placeholder:'Confirme sua senha' %>
         </div>
 
-        <%= form.submit "new User", class:"btn btn-success"%>
+        <%= form.submit "new User", class:"btn btn-success my-2"%>
     <% end %>
 </div>
