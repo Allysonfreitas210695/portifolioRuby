@@ -1,1 +1,19 @@
-cadastrado de User
+<%= form_with(model: @user, local: true) do |form| %>
+  <%= form.label :email %>
+  <%= form.text_field :email, placeholder:'ex: teste@teste.com'%>
+  <br/>
+
+  <%= form.label :name %>
+  <%= form.text_field :name, placeholder:'Digite seu nome'%>
+  <br/>
+
+  <%= form.label :password %>
+  <%= form.text_field :password, placeholder:'Digite sua Senha'%>
+  <br/>
+
+  <%= form.label :password_confirmation %>
+  <%= form.text_field :password_confirmation, placeholder:'Confirme sua senha' %>
+  <br/>
+
+  <%= form.submit "new User" %>
+<% end %>

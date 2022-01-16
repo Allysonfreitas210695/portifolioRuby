@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'sobre', to: 'static_page#sobre'
   get 'contato', to: 'static_page#contato'
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :index]
   
   root to: 'welcome#index'
 end
