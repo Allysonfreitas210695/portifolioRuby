@@ -2,5 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-//= require bootstrap/dist/js/bootstrap.js
-//= require popper.js/dist/popper.js
+//= require jquery/dist/jquery
+//= require popper.js/dist/popper
+//= require @popperjs/core/lib/popper
+//= require bootstrap/dist/js/bootstrap
+//= require bootstrap-growl-ifightcrime/jquery.bootstrap-growl
