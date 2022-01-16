@@ -1,0 +1,6 @@
+'pt-BR':
+  validations:
+    errors:
+      models:
+        user:
+          invalid_email: Email inválido!

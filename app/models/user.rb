@@ -8,5 +8,5 @@ class User < ApplicationRecord
 
   validates :name, presence: true, length: { maximum: 50 } 
   validates :password, presence: true, length: { maximum: 6 }
-  validates :email, presence: true, email: true
+  validates :email, presence: true, email: { mx: true, message: I18n.t('validations.errors.models.user.invalid_email')}
 end

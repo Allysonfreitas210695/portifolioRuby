@@ -13,3 +13,11 @@
         password_confirmation: Confirmação da Senha
         created_at: Criado em
         updated_at: Atualizado em
+    errors:
+      messages:
+        blank: não pode ser em branco
+        invalid: inválido
+        taken: já cadastrado 
+        confirmation: não é igual. Insira a mesma senha
+        too_long: 'Muito grande. Máximo %{count} caracteres'
+        too_short: 'Muito curto. Máximo %{count} caracteres'

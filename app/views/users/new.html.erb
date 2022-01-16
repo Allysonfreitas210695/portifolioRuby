@@ -1,4 +1,14 @@
 <%= form_with(model: @user, local: true) do |form| %>
+   <% if @user.errors.any? %>
+        Ops! encontramos <%= @user.errors.count() %> erros
+        <ul>
+            <% @user.errors.full_messages.each do |error| %>
+                <li> <%= error %> </li>
+                
+            <% end %>
+        </ul>
+   <% end %>
+
   <%= form.label :email %>
   <%= form.text_field :email, placeholder:'ex: teste@teste.com'%>
   <br/>
