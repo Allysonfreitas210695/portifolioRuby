@@ -1,5 +1,10 @@
 {
   "name": "portifolio",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Allysonfreitas210695/portifolioRuby.git",
+  "author": "Allysonfreitas210695 <allysonfr83@gmail.com>",
+  "license": "MIT"
 }
