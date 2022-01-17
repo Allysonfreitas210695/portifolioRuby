@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
   before_action :get_users, only: [:index]
-  
+  before_action :get_user, only: [:index]
+
   def index; end
+
+  def show; end
 
   def new 
     @user = User.new
@@ -24,5 +27,9 @@ class UsersController < ApplicationController
 
   def params_user
     params.require(:user).permit(:email, :name, :password, :password_confirmation)
+  end
+
+  def get_user
+    @user = User.find(params[:id])
   end
 end

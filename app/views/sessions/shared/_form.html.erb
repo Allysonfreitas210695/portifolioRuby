@@ -3,19 +3,7 @@
      <h2> Faça seu Login!</h2>
     </header>
 
-    <%= form_with(model: @user, local: true) do |form| %>
-        <% if @user.errors.any? %>
-                <div class="alert alert-danger alert-dismissable" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                    <ul>
-                        
-                        <% @user.errors.full_messages.each do |error| %>
-                            <li> <%= error %> </li>
-                        <% end %>
-                    </ul>
-                </div>
-        <% end %>
-
+    <%= form_with(object: :session, url: entrar_path, method: :post, local: true) do |form| %>
         <div class="mb-3">
         <%= form.label :email, class:"form-label", id:"exampleFormControl"%>
             <%= form.text_field :email, class:"form-control", for:"exampleFormControlInput1", placeholder:'ex: teste@teste.com' %>
