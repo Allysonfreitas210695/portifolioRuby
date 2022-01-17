@@ -39,13 +39,14 @@
         <% if user_signed_in? %>
           <div class="dropdown">
             <a class="btn text-light btn-dark dropdown-toggle me-3 pe-3" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              <%= current_user.name %>
+                Bem-vindo <%= current_user.name %>
             </a>
 
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               
               <li><a class="dropdown-item" href="#">Sobre</a></li>
               <li><a class="dropdown-item" href="#">Contato</a></li>
+              <hr/>
               <li>
                 <%= link_to 'Sair', sair_path, method: :delete, class:"dropdown-item"%>
               </li>

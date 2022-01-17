@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       sign_in @user
       redirect_to user_path(@user), notice: 'Login com sucesso'
     else
-      redirect_to entrar_path, notice: "Error"
+      redirect_to entrar_path, notice: "Senha ou email incorreto, ou em branco!"
     end
   end
   
